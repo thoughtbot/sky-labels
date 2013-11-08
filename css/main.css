@@ -30,6 +30,11 @@ body {
 .field-wrapper.js-slider-has-text label {
   opacity: 0;
 }
- .field-wrapper.js-slider-focused.js-slider-has-text label {
-   opacity: 1;
- }
+
+.field-wrapper.js-slider-focused.js-slider-has-text label {
+  opacity: 1;
+}
+
+.pure-button {
+  margin-top: 10px;
+}
