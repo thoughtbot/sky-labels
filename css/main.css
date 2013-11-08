@@ -15,14 +15,14 @@ body {
   padding: 4px 6px;
   position: absolute;
   top: 0px;
-  transition: -webkit-transform .1s, opacity .2s, top .1s, left .1s, background-color .1s, color .1s;
+  transition: -webkit-transform .15s, opacity .2s, top .15s, left .15s, background-color .15s, color .15s;
 }
 
 .field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
   -webkit-transform: scale(0.9);
   background-color: #129FEA;
   color: #FFF;
-  left: -4px;
+  left: -3px;
   opacity: 1;
   top: -22px;
 }

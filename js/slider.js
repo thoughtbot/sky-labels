@@ -18,6 +18,14 @@ $('body').on('blur', '.field-wrapper', function() {
 });
 
 function fieldWrapperHasText(fieldWrapper) {
-  var input = fieldWrapper.find('input').first();
+  var input = inputOrTextAreaInside(fieldWrapper);
   return $.trim(input.val()).length
+}
+
+function inputOrTextAreaInside(fieldWrapper) {
+  var input = fieldWrapper.find('input');
+  if ( !input.length ) {
+    input = fieldWrapper.find('textarea')
+  }
+  return input;
 }
