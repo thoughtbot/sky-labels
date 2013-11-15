@@ -3,47 +3,70 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Slider - Sliding Form Labels</title>
-    <meta name="description" content="">
+    <title>Slider - Fun, Compact and Accessible HTML &amp; CSS Forms</title>
+    <meta name="description" content="Slider.js - Fun, Compact and Accessible HTML forms.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="vendor/stylesheets/normalize.css">
+    <link rel="stylesheet" href="stylesheets/application.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="js/slider.js"></script>
-    <h1>Slider</h1>
-    <ul>
-      <li>Customizable through CSS.</li>
-      <li>Accessible (uses a label element).</li>
-      <li>Doesn't require that you change your layout. Labels slide above all other content.</li>
-      <li>Easy to read the labels even when the input is focused.</li>
-    </ul>
-    <h2>Add a person</h2>
-    <form class="pure-form pure-form-stacked">
-      <section class="field-wrapper">
-        <label for="first-name">First name</label>
-        <input name="first-name" id="first-name" type="text" autofocus>
+  </head>
+  <body>
+    <header>
+      <section class="container">
+        <section class="logo">
+          <h1>Slider.js</h1>
+          <h3>Fun, Compact &amp; Accessible Forms</h3>
+        </section>
+        <section class="outbound-buttons">
+          <a href="#" class="bordered-button">View on GitHub</a>
+        </section>
       </section>
+      <section class="fake-web-page">
+        <section class="window-bar">
+          <div class="window-bar-button"></div>
+          <div class="window-bar-button"></div>
+          <div class="window-bar-button"></div>
+        </section>
 
-      <section class="field-wrapper">
-        <label for="last-name">Last name</label>
-        <input name="last-name" id="last-name" type="text">
+        <section class="window-content">
+          <section class="try-it-out">
+            <h3>Try it out!</h3>
+            <form>
+              <section class="field-wrapper">
+                <label for="first-name">First name</label>
+                <input name="first-name" id="first-name" type="text" autocomplete="off" autofocus>
+              </section>
+
+              <section class="field-wrapper">
+                <label for="last-name">Last name</label>
+                <input name="last-name" id="last-name" type="text" autocomplete="off">
+              </section>
+
+              <section class="field-wrapper">
+                <label for="notes">Notes</label>
+                <textarea rows="3" name="notes" id="notes"></textarea>
+              </section>
+            </form>
+          </section>
+
+          <section class="benefits">
+            <h3>Why Slider.js?</h3>
+            <ul>
+              <li>Totally customizable through CSS.</li>
+              <li>Accessible (uses a label element).</li>
+              <li>Doesn't require that you change your layout. The labels slide above all other content.</li>
+              <li>Easy to read the labels even when the input is focused.</li>
+          </section>
+        </section>
       </section>
-
-      <section class="field-wrapper">
-        <label for="phone">Phone</label>
-        <input name="phone" id="phone" type="text">
-      </section>
-
-      <section class="field-wrapper">
-        <label for="notes">Notes</label>
-        <textarea name="notes" id="notes">
-        </textarea>
-      </section>
-
-      <button class="pure-button pure-button-primary">Save</button>
-    </form>
+    </header>
+    <!-- <ul> -->
+    <!--   <li>Customizable through CSS.</li> -->
+    <!--   <li>Accessible (uses a label element).</li> -->
+    <!--   <li>Doesn't require that you change your layout. Labels slide above all other content.</li> -->
+    <!--   <li>Easy to read the labels even when the input is focused.</li> -->
+    <!-- </ul> -->
   </body>
 </html>

@@ -1,30 +1,27 @@
-body {
-  padding: 20px 25px;
-}
-
 .field-wrapper {
   margin-top: 15px;
   position: relative;
 }
 
 .field-wrapper label {
-  border-radius: 4px;
+  border-radius: 3px;
   color: #AAA;
   font-style: italic;
+  font-size: 15px;
   left: 4px;
   padding: 4px 6px;
   position: absolute;
-  top: 0px;
+  top: 4px;
   transition: -webkit-transform .15s, opacity .2s, top .15s, left .15s, background-color .15s, color .15s;
 }
 
 .field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
-  -webkit-transform: scale(0.9);
-  background-color: #129FEA;
+  background-color: #75BBDC;
+  font-size: 14px;
   color: #FFF;
-  left: -3px;
+  left: 0px;
   opacity: 1;
-  top: -22px;
+  top: -20px;
 }
 
 .field-wrapper.js-slider-has-text label {
@@ -33,8 +30,4 @@ body {
 
 .field-wrapper.js-slider-focused.js-slider-has-text label {
   opacity: 1;
-}
-
-.pure-button {
-  margin-top: 10px;
 }

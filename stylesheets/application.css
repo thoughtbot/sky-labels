@@ -1,0 +1,219 @@
+/* line 1, _slider.scss */
+.field-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+
+/* line 6, _slider.scss */
+.field-wrapper label {
+  border-radius: 3px;
+  color: #AAA;
+  font-style: italic;
+  font-size: 15px;
+  left: 4px;
+  padding: 4px 6px;
+  position: absolute;
+  top: 4px;
+  transition: -webkit-transform 0.15s, opacity 0.2s, top 0.15s, left 0.15s, background-color 0.15s, color 0.15s;
+}
+
+/* line 18, _slider.scss */
+.field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
+  background-color: #75BBDC;
+  font-size: 14px;
+  color: #FFF;
+  left: 0px;
+  opacity: 1;
+  top: -20px;
+}
+
+/* line 27, _slider.scss */
+.field-wrapper.js-slider-has-text label {
+  opacity: 0;
+}
+
+/* line 31, _slider.scss */
+.field-wrapper.js-slider-focused.js-slider-has-text label {
+  opacity: 1;
+}
+
+/* line 1, _fake_web_page.scss */
+.fake-web-page {
+  box-shadow: 0px 1px 18px 0px rgba(0, 0, 0, 0.07);
+  background-color: #FEF9EF;
+  min-height: 370px;
+  width: 988px;
+  border: 1px solid rgba(106, 104, 99, 0.57);
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+/* line 13, _fake_web_page.scss */
+.window-content {
+  *zoom: 1;
+  padding: 20px 65px;
+}
+/* line 18, bourbon/addons/_clearfix.scss */
+.window-content:before, .window-content:after {
+  content: " ";
+  display: table;
+}
+/* line 23, bourbon/addons/_clearfix.scss */
+.window-content:after {
+  clear: both;
+}
+
+/* line 18, _fake_web_page.scss */
+.window-bar {
+  height: 34px;
+  width: 100%;
+  background-color: #ECECEC;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #CED6D7;
+}
+
+/* line 27, _fake_web_page.scss */
+.window-bar-button {
+  width: 14px;
+  height: 14px;
+  background-color: #BCC9D2;
+  border-radius: 50%;
+  margin-top: 9px;
+  margin-left: 9px;
+  float: left;
+}
+
+/* line 37, _fake_web_page.scss */
+.try-it-out {
+  float: left;
+}
+
+/* line 41, _fake_web_page.scss */
+.benefits {
+  float: left;
+  margin-left: 100px;
+  width: 450px;
+}
+
+/* line 1, _form.scss */
+form {
+  float: left;
+  clear: left;
+}
+
+/* line 6, _form.scss */
+input, textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background: #FFFFFF;
+  font-size: 15px;
+  border: 1px solid #CFC9BC;
+  padding: 7px 10px;
+  width: 280px;
+  margin-bottom: 3px;
+}
+/* line 16, _form.scss */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #75BBDC;
+}
+
+/* line 6, application.scss */
+html {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 11, application.scss */
+body {
+  color: #4C7791;
+}
+
+/* line 15, application.scss */
+header {
+  background-color: #D4E6EE;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+/* line 22, application.scss */
+.container {
+  *zoom: 1;
+  width: 870px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 18, bourbon/addons/_clearfix.scss */
+.container:before, .container:after {
+  content: " ";
+  display: table;
+}
+/* line 23, bourbon/addons/_clearfix.scss */
+.container:after {
+  clear: both;
+}
+
+/* line 29, application.scss */
+.logo {
+  float: left;
+}
+/* line 32, application.scss */
+.logo h1 {
+  font-size: 33px;
+  font-weigh: bold;
+  color: #22546B;
+  margin: 0px;
+  margin-top: 38px;
+}
+/* line 40, application.scss */
+.logo h3 {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: normal;
+  margin-top: 10px;
+  color: #558BA3;
+}
+
+/* line 49, application.scss */
+h3 {
+  font-size: 18px;
+  color: #22546B;
+}
+
+/* line 54, application.scss */
+ul {
+  margin-top: 30px;
+}
+/* line 57, application.scss */
+ul li {
+  font-size: 16px;
+  margin-bottom: 7px;
+  line-height: 28px;
+}
+
+/* line 64, application.scss */
+.outbound-buttons {
+  float: right;
+  margin-top: 55px;
+}
+
+/* line 69, application.scss */
+.bordered-button {
+  border: 2px solid #1C5773;
+  border-radius: 8px;
+  font-size: 17px;
+  color: #1C5773;
+  padding: 11px 36px;
+  text-decoration: none;
+  background-color: #FFF;
+}
+/* line 78, application.scss */
+.bordered-button:hover {
+  background-color: rgba(255, 255, 255, 0.37);
+}
