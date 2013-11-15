@@ -1,0 +1,37 @@
+{
+  "name": "SkyLabels.js",
+  "title": "SkyLabels.js",
+  "description": "Fun, Compact & Accessible Forms",
+  "keywords": [
+    "jquery",
+    "labels",
+    "plugins",
+    "forms"
+  ],
+  "version": "0.0.1",
+  "author": {
+    "name": "Paul Smith",
+    "email": "paul@thoughtbot.com",
+    "url": "https://github.com/paulcsmith"
+  },
+  "maintainers": [
+    {
+      "name": "Paul Smith",
+      "email": "paul@thoughtbot.com",
+      "url": "https://github.com/paulcsmith"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "bugs": "https://github.com/thoughtbot/slider/issues",
+  "homepage": "http://thoughtbot.github.io/slider",
+  "docs": "http://thoughtbot.github.io/slider#readme",
+  "download": "https://github.com/thoughtbot/slider/dist/sky-labels.min.js",
+  "dependencies": {
+    "jquery": ">=1.4"
+  }
+}
