@@ -6,7 +6,7 @@
  *  Made by Paul Smith
  *  Under MIT License
  */
-function setupSkyLabels() {
+var setupSkyLabels = function () {
   $(document).on("focus", ".field-wrapper", function() {
     var fieldWrapper = $(this);
     addOrRemoveHasTextClass(fieldWrapper);
@@ -18,7 +18,7 @@ function setupSkyLabels() {
     addOrRemoveHasTextClass(fieldWrapper);
     fieldWrapper.removeClass("js-slider-focused");
   });
-}
+};
 
 function addOrRemoveHasTextClass(fieldWrapper) {
   if ( fieldWrapperHasText(fieldWrapper) ) {

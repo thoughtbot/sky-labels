@@ -15,22 +15,24 @@ SkyLabels.js
 ## Getting Started
 
 1. Download JavaScript & CSS files. Get them from [/dist/sky-labels.min.js](dist/sky-labels.min.js)
-   and [/dist/sky-labels.css](/dist/sky-labels.css)
-2. Put JavaScript & CSS files in your CSS and JavaScript directories
+   and [/dist/sky-labels.css](/dist/sky-labels.css).
+2. Put JavaScript & CSS files in your CSS and JavaScript directories.
 3. Link to the JavaScript in your `<head>` tag or near the end of the `<body>`
    tag. Be sure to add `sky-labels.min.js` below jQuery.
 4. Wrap inputs & labels in a `<section>`, `<div>` or other block level element with
    the class `field-wrapper`. Be sure the label has a `for` that matches the input.
-5. Call `setupSkyLabels()` in a `domready` or right after you include the
-   `sky-labels.min.js`
+5. Call `setupSkyLabels()` during the `domready` event or right after you include the
+   `sky-labels.min.js`.
 6. Customize the CSS to your liking! You can change how it animates, colors,
    size, etc.
 
 #### Example HTML
 
 ```html
+<!-- Put the stylesheet in the <head> -->
+<link rel="stylesheet" type="text/css" href="css/sky-labels.css">
 <!-- In your <head> or just before the </body> tag -->
-<script src="js/slider.js"></script>
+<script src="js/sky-labels.js"></script>
 <!-- Setup events for slide labels -->
 <script type="text/javascript">
 setupSkyLabels();
