@@ -1,0 +1,34 @@
+.field-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+
+.field-wrapper label {
+  border-radius: 3px;
+  color: #AAA;
+  font-style: italic;
+  font-size: 15px;
+  left: 4px;
+  padding: 4px 6px;
+  position: absolute;
+  top: 4px;
+  transition: -webkit-transform .15s, opacity .2s, top .15s, left .15s, background-color .15s, color .15s;
+}
+
+.field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
+  background-color: #75BBDC;
+  font-size: 14px;
+  color: #FFF;
+  left: 0px;
+  opacity: 1;
+  top: -20px;
+}
+
+.field-wrapper.js-slider-has-text label {
+  opacity: 0;
+}
+
+.field-wrapper.js-slider-focused.js-slider-has-text label {
+  opacity: 1;
+}
+

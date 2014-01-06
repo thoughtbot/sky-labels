@@ -1,0 +1,16 @@
+{
+  "name": "Slider.js",
+  "title": "Slider.js",
+  "description": "Fun, Compact & Accessible Forms",
+  "author": "Paul Smith",
+  "homepage": "https://github.com/thoughtbot/slider/",
+  "repository": "https://github.com/thoughtbot/slider/",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.7",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0"
+  }
+}
