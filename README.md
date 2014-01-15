@@ -3,7 +3,7 @@ SkyLabels.js
 
 ### Fun, Compact & Accessible Forms
 
-[Try out a live demo](http://thoughtbot.github.io/slider/)
+[Try out a live demo](http://thoughtbot.github.io/sky-labels/)
 
 ## Why SkyLabels.js?
 
