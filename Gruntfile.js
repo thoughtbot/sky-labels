@@ -1,8 +1,5 @@
 module.exports = function(grunt) {
-
   grunt.initConfig({
-
-    // Import package manifest
     pkg: grunt.file.readJSON("sky-labels.json"),
 
     // Banner definitions
@@ -17,7 +14,6 @@ module.exports = function(grunt) {
         " */\n"
     },
 
-    // Concat definitions
     concat: {
       dist: {
         src: ["src/sky-labels.js"],
@@ -28,15 +24,13 @@ module.exports = function(grunt) {
       }
     },
 
-    // Lint definitions
     jshint: {
-      files: ["src/sky-labels.js"],
+      files: ["src/**/*.js", "spec/**/*-spec.js"],
       options: {
         jshintrc: ".jshintrc"
       }
     },
 
-    // Minify definitions
     uglify: {
       my_target: {
         src: ["dist/sky-labels.js"],
