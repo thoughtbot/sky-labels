@@ -18,6 +18,12 @@ var setupSkyLabels = function () {
     addOrRemoveHasTextClass(fieldWrapper);
     fieldWrapper.removeClass("js-slider-focused");
   });
+
+  $(document).ready(function hideLabelsIfInputHasText() {
+    $(".field-wrapper").each(function(index, fieldWrapper) {
+      addOrRemoveHasTextClass( $(fieldWrapper) );
+    });
+  });
 };
 
 function addOrRemoveHasTextClass(fieldWrapper) {
