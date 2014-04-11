@@ -65,3 +65,15 @@ The class are applied as follows
 You can apply styles and animations based on these two classes. See the [example
 CSS](https://github.com/thoughtbot/slider/blob/gh-pages/stylesheets/_slider.scss)
 from the SkyLabels.js website.
+
+## For Developers
+
+You need [node](http://nodejs.org/). Then, in your shell:
+
+```bash
+git clone https://github.com/thoughtbot/sky-labels.git
+cd sky-labels
+npm install -g grunt-cli
+npm install
+grunt # This compiles and minifies the JavaScript and Sass into dist/
+```
