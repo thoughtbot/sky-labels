@@ -46,12 +46,20 @@ module.exports = function(grunt) {
         banner: "<%= meta.banner %>"
       }
     },
+
+    sass: {
+      dist: {
+        files: {
+          'dist/sky-labels.css': 'src/sky-labels.scss'
+        }
+      }
+    }
   });
 
   grunt.loadNpmTasks("grunt-contrib-concat");
   grunt.loadNpmTasks("grunt-contrib-jshint");
   grunt.loadNpmTasks("grunt-contrib-uglify");
+  grunt.loadNpmTasks("grunt-sass");
 
-  grunt.registerTask("default", ["jshint", "concat", "uglify"]);
-
+  grunt.registerTask("default", ["jshint", "concat", "uglify", "sass"]);
 };

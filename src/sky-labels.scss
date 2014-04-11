@@ -1,0 +1,39 @@
+$sky-labels-blurred-text-color: #000 !default;
+$sky-labels-focused-background-color: #000 !default;
+$sky-labels-focused-text-color: #FFF !default;
+$sky-labels-animation-duration: .15s !default;
+
+.field-wrapper {
+  margin-top: 15px;
+  position: relative;
+}
+
+.field-wrapper label {
+  color: $sky-labels-blurred-text-color;
+  left: 4px;
+  padding: 4px 6px;
+  position: absolute;
+  top: 4px;
+  transition: -webkit-transform $sky-labels-animation-duration,
+    opacity $sky-labels-animation-duration,
+    top $sky-labels-animation-duration,
+    left $sky-labels-animation-duration,
+    background-color $sky-labels-animation-duration,
+    color $sky-labels-animation-duration;
+}
+
+.field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
+  background-color: $sky-labels-focused-background-color;
+  color: $sky-labels-focused-text-color;
+  left: 0px;
+  opacity: 1;
+  top: -20px;
+}
+
+.field-wrapper.js-slider-has-text label {
+  opacity: 0;
+}
+
+.field-wrapper.js-slider-focused.js-slider-has-text label {
+  opacity: 1;
+}
