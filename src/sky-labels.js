@@ -12,7 +12,7 @@ var setupSkyLabels = function () {
   });
 
   $(document).ready(function hideLabelsIfInputHasText() {
-    $('.field-wrapper').each(function(index, fieldWrapper) {
+    $(".field-wrapper").each(function(index, fieldWrapper) {
       addOrRemoveHasTextClass( $(fieldWrapper) );
     });
   });
