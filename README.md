@@ -77,3 +77,9 @@ npm install -g grunt-cli
 npm install
 grunt # This compiles and minifies the JavaScript and Sass into dist/
 ```
+
+#### Using Tests
+
+Sky Labels uses Jasmine for testing. Add new specs to the `spec` folder.
+
+To run tests: `open spec/runner.html`
