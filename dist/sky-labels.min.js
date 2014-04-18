@@ -1,7 +1,7 @@
 /*
  *  SkyLabels.js - v0.0.1
  *  Fun, Compact & Accessible Forms
- *  http://thoughtbot.github.io/slider
+ *  http://thoughtbot.github.io/sky-labels
  *
  *  Made by Paul Smith
  *  Under MIT License
