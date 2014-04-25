@@ -5,7 +5,7 @@
   "author": "Paul Smith",
   "homepage": "https://github.com/thoughtbot/sky-labels/",
   "repository": "https://github.com/thoughtbot/sky-labels/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "devDependencies": {
     "grunt": "~0.4.4",
     "grunt-cli": "~0.1.7",

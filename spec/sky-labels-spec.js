@@ -5,61 +5,61 @@ describe("Sky Labels", function() {
   });
 
   describe("when an input without text is focused", function() {
-    it("adds 'js-slider-focused' class to wrapper", function() {
+    it("adds 'sky-label-focused' class to wrapper", function() {
       setupSkyLabels();
 
       skyLabelsInput().focus();
 
-      expect(skyLabelsWrapper()).toHaveClass("js-slider-focused");
-      expect(skyLabelsWrapper()).not.toHaveClass("js-slider-has-text");
+      expect(skyLabelsWrapper()).toHaveClass("sky-label-focused");
+      expect(skyLabelsWrapper()).not.toHaveClass("sky-label-has-text");
     });
   });
 
   describe("when an input with text is focused", function() {
-    it("adds 'js-slider-focused' and 'js-slider-has-text' classes to wrapper", function() {
+    it("adds 'sky-label-focused' and 'sky-label-has-text' classes to wrapper", function() {
       setupSkyLabels();
 
       skyLabelsInput().val("Something");
       skyLabelsInput().focus();
 
-      expect(skyLabelsWrapper()).toHaveClass("js-slider-focused");
-      expect(skyLabelsWrapper()).toHaveClass("js-slider-has-text");
+      expect(skyLabelsWrapper()).toHaveClass("sky-label-focused");
+      expect(skyLabelsWrapper()).toHaveClass("sky-label-has-text");
     });
   });
 
   describe("when an input with text is focused then blurred", function() {
-    it("removes 'js-slider-focused' class from wrapper", function() {
+    it("removes 'sky-label-focused' class from wrapper", function() {
       setupSkyLabels();
 
       skyLabelsInput().focus();
       skyLabelsInput().val("Something");
       skyLabelsInput().blur();
 
-      expect(skyLabelsWrapper()).toHaveClass("js-slider-has-text");
-      expect(skyLabelsWrapper()).not.toHaveClass("js-slider-focused");
+      expect(skyLabelsWrapper()).toHaveClass("sky-label-has-text");
+      expect(skyLabelsWrapper()).not.toHaveClass("sky-label-focused");
     });
   });
 
   describe("when an input with text was never focused", function() {
-    it("adds 'js-slider-has-text' class to wrapper", function() {
+    it("adds 'sky-label-has-text' class to wrapper", function() {
       skyLabelsInput().val("Something");
 
       setupSkyLabels();
 
-      expect(skyLabelsWrapper()).toHaveClass("js-slider-has-text");
-      expect(skyLabelsWrapper()).not.toHaveClass("js-slider-focused");
+      expect(skyLabelsWrapper()).toHaveClass("sky-label-has-text");
+      expect(skyLabelsWrapper()).not.toHaveClass("sky-label-focused");
     });
   });
 
   describe("when a textarea is focused with text", function() {
-    it("adds 'js-slider-focused' and 'js-slider-has-text' classes to wrapper", function() {
+    it("adds 'sky-label-focused' and 'sky-label-has-text' classes to wrapper", function() {
       setupSkyLabels();
 
       skyLabelsTextArea().val("Something");
       skyLabelsTextArea().focus();
 
-      expect(skyLabelsTextAreaWrapper()).toHaveClass("js-slider-focused");
-      expect(skyLabelsTextAreaWrapper()).toHaveClass("js-slider-has-text");
+      expect(skyLabelsTextAreaWrapper()).toHaveClass("sky-label-focused");
+      expect(skyLabelsTextAreaWrapper()).toHaveClass("sky-label-has-text");
     });
   });
 
@@ -72,10 +72,10 @@ describe("Sky Labels", function() {
   }
 
   function skyLabelsWrapper() {
-    return skyLabelsInput().parent(".field-wrapper");
+    return skyLabelsInput().parent(".sky-label");
   }
 
   function skyLabelsTextAreaWrapper() {
-    return skyLabelsTextArea().parent(".field-wrapper");
+    return skyLabelsTextArea().parent(".sky-label");
   }
 });
