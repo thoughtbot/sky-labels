@@ -20,7 +20,7 @@ SkyLabels.js
 3. Link to the JavaScript in your `<head>` tag or near the end of the `<body>`
    tag. Be sure to add `sky-labels.min.js` below jQuery.
 4. Wrap inputs & labels in a `<section>`, `<div>` or other block level element with
-   the class `field-wrapper`. Be sure the label has a `for` that matches the input.
+   the class `sky-label`. Be sure the label has a `for` that matches the input.
 5. Call `setupSkyLabels()` during the `domready` event or right after you include the
    `sky-labels.min.js`.
 6. Customize the CSS to your liking! You can change how it animates, colors,
@@ -40,8 +40,8 @@ setupSkyLabels();
 ```
 
 ```html
-<!-- Wrap the input and label in a block element with the class "field-wrapper" -->
-<section class="field-wrapper">
+<!-- Wrap the input and label in a block element with the class "sky-label" -->
+<section class="sky-label">
   <!-- Be sure the for matches the input so that when the label is clicked the
 input is focused -->
   <label for="first-name">First name</label>
@@ -55,12 +55,12 @@ SkyLabels.js website
 ## Styling and animating your SkyLabels
 
 SkyLabels.js adds and removes styles from the element with the class
-`field-wrapper` so that you can customize every step of the slide.
+`sky-label` so that you can customize every step of the slide.
 
 The class are applied as follows
 
-* `js-slider-focused` when the input has been focused
-* `js-slider-has-text` when the input has text
+* `sky-label-focused` when the input has been focused
+* `sky-label-has-text` when the input has text
 
 You can apply styles and animations based on these two classes. See the [example
 CSS](https://github.com/thoughtbot/slider/blob/gh-pages/stylesheets/_slider.scss)

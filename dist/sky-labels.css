@@ -1,8 +1,8 @@
-.field-wrapper {
+.sky-label {
   margin-top: 15px;
   position: relative; }
 
-.field-wrapper label {
+.sky-label label {
   color: #000;
   left: 4px;
   padding: 4px 6px;
@@ -10,15 +10,15 @@
   top: 4px;
   transition: -webkit-transform 0.15s, opacity 0.15s, top 0.15s, left 0.15s, background-color 0.15s, color 0.15s; }
 
-.field-wrapper.js-slider-focused label, .field-wrapper.js-slider-has-text label {
+.sky-label-focused label, .sky-label-has-text label {
   background-color: #000;
   color: #FFF;
   left: 0px;
   opacity: 1;
   top: -20px; }
 
-.field-wrapper.js-slider-has-text label {
+.sky-label-has-text label {
   opacity: 0; }
 
-.field-wrapper.js-slider-focused.js-slider-has-text label {
+.sky-label-focused.sky-label-has-text label {
   opacity: 1; }

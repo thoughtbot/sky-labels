@@ -1,5 +1,5 @@
 /*
- *  SkyLabels.js - v0.0.1
+ *  SkyLabels.js - v0.0.2
  *  Fun, Compact & Accessible Forms
  *  http://thoughtbot.github.io/sky-labels
  *
@@ -7,31 +7,31 @@
  *  Under MIT License
  */
 var setupSkyLabels = function () {
-  $(document).on("focus blur", ".field-wrapper", addOrRemoveHasTextClass);
-  $(document).on("focus", ".field-wrapper", addFocusedClass);
-  $(document).on("blur", ".field-wrapper", removeFocusedClass);
+  $(document).on("focus blur", ".sky-label", addOrRemoveHasTextClass);
+  $(document).on("focus", ".sky-label", addFocusedClass);
+  $(document).on("blur", ".sky-label", removeFocusedClass);
   $(document).ready(hideLabelsIfInputHasText);
 
   function addFocusedClass(event) {
     var fieldWrapper = $(event.currentTarget);
-    fieldWrapper.addClass("js-slider-focused");
+    fieldWrapper.addClass("sky-label-focused");
   }
 
   function removeFocusedClass(event) {
     var fieldWrapper = $(event.currentTarget);
-    fieldWrapper.removeClass("js-slider-focused");
+    fieldWrapper.removeClass("sky-label-focused");
   }
 
   function hideLabelsIfInputHasText() {
-    $(".field-wrapper").trigger("blur");
+    $(".sky-label").trigger("blur");
   }
 
   function addOrRemoveHasTextClass(event) {
     var fieldWrapper = $(event.currentTarget);
     if ( fieldWrapperHasText(fieldWrapper) ) {
-      fieldWrapper.addClass("js-slider-has-text");
+      fieldWrapper.addClass("sky-label-has-text");
     } else {
-      fieldWrapper.removeClass("js-slider-has-text");
+      fieldWrapper.removeClass("sky-label-has-text");
     }
   }
 
