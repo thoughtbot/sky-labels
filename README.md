@@ -14,6 +14,10 @@ SkyLabels.js
 
 ## Getting Started
 
+If you are using Rails, check out
+[sky-labels-rails](https://github.com/thoughtbot/sky-labels-rails). Otherwise,
+read the following.
+
 1. Download JavaScript & CSS files. Get them from [/dist/sky-labels.min.js](dist/sky-labels.min.js)
    and [/dist/sky-labels.css](/dist/sky-labels.css).
 2. Put JavaScript & CSS files in your CSS and JavaScript directories.
