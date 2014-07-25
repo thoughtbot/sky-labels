@@ -6,11 +6,16 @@
  *  Made by Paul Smith
  *  Under MIT License
  */
-var setupSkyLabels = function () {
-  $(document).on("focus blur", ".sky-label", addOrRemoveHasTextClass);
-  $(document).on("focus", ".sky-label", addFocusedClass);
-  $(document).on("blur", ".sky-label", removeFocusedClass);
-  $(document).ready(hideLabelsIfInputHasText);
+var setupSkyLabels = function (element) {
+  if (element === undefined || element === null) {
+    element = document;
+  }
+  element = $(element);
+
+  element.on("focus blur", ".sky-label", addOrRemoveHasTextClass);
+  element.on("focus", ".sky-label", addFocusedClass);
+  element.on("blur", ".sky-label", removeFocusedClass);
+  element.ready(hideLabelsIfInputHasText);
 
   function addFocusedClass(event) {
     var fieldWrapper = $(event.currentTarget);
@@ -23,7 +28,7 @@ var setupSkyLabels = function () {
   }
 
   function hideLabelsIfInputHasText() {
-    $(".sky-label").trigger("blur");
+    element.find(".sky-label").trigger("blur");
   }
 
   function addOrRemoveHasTextClass(event) {
