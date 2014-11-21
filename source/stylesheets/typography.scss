@@ -23,13 +23,16 @@ main {
 
 .main-header {
   line-height: 32px;
+
   .logo-wrapper {
     color: $main-header-color;
     font-size: 13px;
   }
+
   a {
     color: $main-header-link-color;
     text-decoration: none;
+
     &:hover {
       text-decoration: underline;
     }
@@ -38,6 +41,7 @@ main {
 
 .example-form {
   text-align: left;
+
   h3 {
     text-align: center;
     font-weight: $base-font-book;
@@ -61,6 +65,7 @@ main {
 .call-to-action {
   color: $dark-biege;
   line-height: 45px;
+
   .logo {
     vertical-align: text-bottom;
   }
