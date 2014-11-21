@@ -2,12 +2,12 @@
 
 body {
   font-family: 'Gotham SSm A', 'Gotham SSm B';
-  font-weight: $gotham-light;
+  font-weight: $base-font-light;
   font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: $gotham-extra-light;
+  font-weight: $base-font-extra-light;
 }
 
 main {
@@ -40,7 +40,7 @@ main {
   text-align: left;
   h3 {
     text-align: center;
-    font-weight: $gotham-book;
+    font-weight: $base-font-book;
     font-size: 26px;
   }
 }
