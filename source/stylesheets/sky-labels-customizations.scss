@@ -16,11 +16,12 @@
 .sky-label label {
   border-radius: 3px;
   color: $sky-label-input-blurred-color;
+  top: 8px;
 }
 
 .sky-label-focused, .sky-label-has-text {
   label {
-    @include transform(translate(5px, -20px));
+    @include transform(translate(5px, -22px));
     background: #53A1DD;
     color: lighten($sky-labels-blue, 30%);
     font-size: 12px;

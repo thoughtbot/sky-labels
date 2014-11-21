@@ -15,9 +15,9 @@ main {
 }
 
 .project-name {
+  color: #9B9B9B;
   font-size: 18px;
   font-style: italic;
-  color: #9B9B9B;
   letter-spacing: 2px;
 }
 
@@ -43,9 +43,9 @@ main {
   text-align: left;
 
   h3 {
-    text-align: center;
-    font-weight: $base-font-book;
     font-size: 26px;
+    font-weight: $base-font-book;
+    text-align: center;
   }
 }
 
