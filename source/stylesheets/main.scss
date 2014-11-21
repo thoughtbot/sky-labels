@@ -32,8 +32,7 @@ body {
 
 .demo-device {
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   width: 1185px;
 }
 
@@ -86,8 +85,7 @@ body {
 
 .example-websites {
   @include clearfix;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   margin-top: 60px;
   padding-bottom: 50px;
   width: 900px;
