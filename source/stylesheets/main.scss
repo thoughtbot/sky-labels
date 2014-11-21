@@ -1,0 +1,149 @@
+body {
+  background-color: $background-color;
+}
+
+.main-header {
+  @include clearfix;
+  height: 32px;
+  padding: 15px 25px;
+  line-height: 32px;
+}
+
+.sponsor-link {
+  float: left;
+  .ralph {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.repo-link {
+  float: right;
+  .octocat {
+    float: right;
+    margin-left: 10px;
+  }
+}
+
+.laptop {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1185px;
+}
+
+.example-form {
+  position: absolute;
+  top: 90px;
+  left: 380px;
+  background-color: #EFEDE9;
+  height: 400px;
+  width: 450px;
+  h3 {
+    margin-bottom: 50px;
+  }
+}
+
+.project-name {
+  margin-top: 40px;
+}
+
+.tagline {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.content {
+  background-color: $bottom-background-color;
+  margin-top: -150px;
+  padding-top: 150px;
+}
+
+.call-to-action {
+  height: 45px;
+  width: 275px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: $call-to-action-background-color;
+  &:hover {
+    background-color: darken($call-to-action-background-color, 5%);
+  }
+  .logo {
+    margin-bottom: -2px;
+    margin-right: 5px;
+    margin-left: -5px;
+  }
+}
+
+.example-websites {
+  @include clearfix;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  padding-bottom: 50px;
+  width: 900px;
+}
+
+.website {
+  @include clearfix;
+  @include transition(all .35s);
+  position: relative;
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 5px solid #FFF;
+  float: left;
+  &:nth-child(odd) {
+    margin-right: 40px;
+  }
+  &:hover {
+    @include transform(scale(1.03));
+  }
+  img {
+    @include transition(all, .35s);
+  }
+  &:hover img {
+    @include transform(scale(1.15) translate(15px, 10px));
+  }
+  a {
+    @include transition(all .35s);
+    @include transform(translateY(0px));
+    position: absolute;
+    font-weight: 500;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 130px;
+    padding-bottom: 400px;
+    margin-left: -15px;
+    color: #FFF;
+  }
+  &:hover a {
+    @include transform(scale(1.15) translate(15px, 10px));
+  }
+  .website-overlay {
+    @include transition(all, .35s);
+    background-color: transparentize(#000, .4);
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &:hover .website-overlay {
+    opacity: 1;
+  }
+  .website-overlay.blue {
+    background-color: transparentize(darken(#49739B, 10%), .4);
+  }
+  .website-overlay.red {
+    background-color: transparentize(darken(#932327, 10%), .4);
+  }
+}

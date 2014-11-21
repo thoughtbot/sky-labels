@@ -1,0 +1,33 @@
+.sky-label input {
+  @include transition(background .25s);
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 1px lighten($sky-label-input-blurred-color, 20%);
+  height: 50px;
+  margin-bottom: 30px;
+  outline: none;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.sky-label label {
+  border-radius: 3px;
+  color: $sky-label-input-blurred-color;
+}
+
+.sky-label-focused, .sky-label-has-text {
+  label {
+    @include transform(translate(5px, -20px));
+    background: #53A1DD;
+    color: lighten($sky-labels-blue, 30%);
+    font-size: 12px;
+    line-height: 17px;
+    text-transform: uppercase;
+  }
+}
+
+.sky-label-focused input {
+  background: #FFFFFE;
+  border-bottom-width: 2px;
+  border-radius: 4px;
+}

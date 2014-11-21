@@ -1,0 +1,65 @@
+body {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: $gotham-light;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $gotham-extra-light;
+}
+
+main {
+  text-align: center;
+}
+
+.project-name {
+  font-size: 18px;
+  font-style: italic;
+  color: #9B9B9B;
+  letter-spacing: 2px;
+}
+
+.main-header {
+  line-height: 32px;
+  .logo-wrapper {
+    color: $main-header-color;
+    font-size: 13px;
+  }
+  a {
+    color: $main-header-link-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.example-form {
+  text-align: left;
+  h3 {
+    text-align: center;
+    font-weight: $gotham-book;
+    font-size: 26px;
+  }
+}
+
+.tagline {
+  color: $sky-labels-blue;
+  font-size: 30px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.supporting-tagline {
+  color: #5F5F6B;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.call-to-action {
+  color: $dark-biege;
+  line-height: 45px;
+  .logo {
+    vertical-align: text-bottom;
+  }
+}
