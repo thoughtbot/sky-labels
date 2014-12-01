@@ -1,6 +1,7 @@
 $sky-labels-blue: #5398e8;
 $call-to-action-background-color: lighten($sky-labels-blue, 2%);
 $dark-biege: #ebe6dd;
+$transparent-dark-biege: transparentize(desaturate(darken($dark-biege, 90%), 30%), 0.7);
 $biege: #f5f2ec;
 $background-color: $biege;
 $bottom-background-color: $dark-biege;
@@ -10,3 +11,6 @@ $base-font-light: 300;
 $base-font-extra-light: 200;
 $base-font-book: normal;
 $sky-label-input-blurred-color: #9B9B9B;
+$example-website-overlay-color: transparentize(darken(#000, 10%), 0.4);
+$example-website-overlay-color: $transparent-dark-biege;
+$default-padding: 20px;

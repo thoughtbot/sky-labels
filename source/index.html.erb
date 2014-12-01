@@ -51,30 +51,34 @@ title: SkyLabels - Fun &amp; Compact Forms
       Check it out on Github
     </a>
     <section class="example-websites">
-      <figure class="website">
-        <img alt="thoughtbot contact form screenshot" src="/images/example-websites/hire-thoughtbot.png">
-        <figcaption class="website-overlay red">
-          <a href="http://thoughtbot.com/hire-us">See the form</a>
-        </figcaption>
-      </figure>
-      <figure class="website">
-        <img alt="Keep Ruby Weird screenshot" src="/images/example-websites/keep-ruby-weird.png">
-        <figcaption class="website-overlay">
-          <a href="http://keeprubyweird.com/scholarships/apply">See the form</a>
-        </figcaption>
-      </figure>
-      <figure class="website">
-        <img alt="Revup screenshot" src="/images/example-websites/revup.png">
-        <figcaption class="website-overlay blue">
-          <a href="http://stg.revup.io/signup">See the form</a>
-        </figcaption>
-      </figure>
-      <figure class="website">
-        <img alt="Internal thoughtbot screenshot" src="/images/example-websites/team-project.png">
-        <figcaption class="website-overlay red">
-          <a href="#">See the form</a>
-        </figcaption>
-      </figure>
+      <%= partial 'example_website', locals:
+        {
+          title: 'thoughtbot contact form screenshot',
+          image_src: '/images/example-websites/hire-thoughtbot.png',
+          url: 'http://thoughtbot.com/hire-us'
+        }
+      %>
+      <%= partial 'example_website', locals:
+        {
+          title: 'Keep Ruby Weird screenshot',
+          image_src: '/images/example-websites/keep-ruby-weird.png',
+          url: 'http://keeprubyweird.com/scholarships/apply'
+        }
+      %>
+      <%= partial 'example_website', locals:
+        {
+          title: 'Revup screenshot',
+          image_src: '/images/example-websites/revup.png',
+          url: 'http://stg.revup.io/signup'
+        }
+      %>
+      <%= partial 'example_website', locals:
+        {
+          title: 'Internal thoughtbot screenshot',
+          image_src: '/images/example-websites/team-project.png',
+          url: '#'
+        }
+      %>
     </section>
   </section>
 </main>

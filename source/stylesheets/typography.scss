@@ -70,3 +70,14 @@ main {
     vertical-align: text-bottom;
   }
 }
+
+.website a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 0px 0px 0px #000;
+
+  &:hover {
+    text-shadow: 0px 1px 4px transparentize(#000, 0.3);
+  }
+}
