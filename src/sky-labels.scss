@@ -14,6 +14,7 @@ $sky-labels-animation-duration: .15s !default;
   padding: 4px 6px;
   position: absolute;
   top: 4px;
+  cursor: text;
   transition: -webkit-transform $sky-labels-animation-duration,
     opacity $sky-labels-animation-duration,
     top $sky-labels-animation-duration,
@@ -28,6 +29,7 @@ $sky-labels-animation-duration: .15s !default;
   left: 0px;
   opacity: 1;
   top: -20px;
+  cursor: default;
 }
 
 .sky-label-has-text label {
