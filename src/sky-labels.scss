@@ -1,7 +1,7 @@
 $sky-labels-blurred-text-color: #000 !default;
 $sky-labels-focused-background-color: #000 !default;
-$sky-labels-focused-text-color: #FFF !default;
-$sky-labels-animation-duration: .15s !default;
+$sky-labels-focused-text-color: #fff !default;
+$sky-labels-animation-duration: 0.15s !default;
 
 .sky-label {
   margin-top: 15px;
@@ -10,11 +10,11 @@ $sky-labels-animation-duration: .15s !default;
 
 .sky-label label {
   color: $sky-labels-blurred-text-color;
+  cursor: text;
   left: 4px;
   padding: 4px 6px;
   position: absolute;
   top: 4px;
-  cursor: text;
   transition: -webkit-transform $sky-labels-animation-duration,
     opacity $sky-labels-animation-duration,
     top $sky-labels-animation-duration,
@@ -23,13 +23,14 @@ $sky-labels-animation-duration: .15s !default;
     color $sky-labels-animation-duration;
 }
 
-.sky-label-focused label, .sky-label-has-text label {
+.sky-label-focused label,
+.sky-label-has-text label {
   background-color: $sky-labels-focused-background-color;
   color: $sky-labels-focused-text-color;
+  cursor: default;
   left: 0px;
   opacity: 1;
   top: -20px;
-  cursor: default;
 }
 
 .sky-label-has-text label {
