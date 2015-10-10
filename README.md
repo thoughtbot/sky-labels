@@ -39,7 +39,7 @@ read the following.
 <script src="js/sky-labels.js"></script>
 <!-- Setup events for slide labels -->
 <script type="text/javascript">
-setupSkyLabels();
+setupSkyLabels(document);
 </script>
 ```
 

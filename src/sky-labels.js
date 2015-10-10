@@ -1,7 +1,11 @@
-var setupSkyLabels = function () {
-  $(document).on("focus blur", ".sky-label", addOrRemoveHasTextClass);
-  $(document).on("focus", ".sky-label", addFocusedClass);
-  $(document).on("blur", ".sky-label", removeFocusedClass);
+var setupSkyLabels = function (node) {
+  if (!node) {
+    node = document;
+  }
+
+  $(node).on("focus blur", ".sky-label", addOrRemoveHasTextClass);
+  $(node).on("focus", ".sky-label", addFocusedClass);
+  $(node).on("blur", ".sky-label", removeFocusedClass);
   $(document).ready(hideLabelsIfInputHasText);
 
   function addFocusedClass(event) {
